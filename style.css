@@ -1,0 +1,87 @@
+body {
+    background-color: #181818;
+    color: #89CFF0;
+    height: 100vh;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.left-side, .right-side {
+    width: 50%;
+}
+
+form {
+    margin: 0;;
+}
+
+fieldset {
+    border-color: #89CFF0;
+    margin: 0;
+}
+
+.add-todo-field {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+#add-button {
+    background-color: #181818;
+    color: #89CFF0;
+    border-color: #89CFF0;
+    cursor: pointer;
+}
+
+input {
+    background-color: #181818;
+    border: none;
+    color: #89CFF0
+}
+
+::placeholder {
+    color: #89CFF0;
+}
+
+li {
+    list-style-type: '- ';
+    cursor: pointer;
+    user-select: none;
+}
+
+
+.finished {
+    text-decoration: line-through;
+    text-decoration-thickness: 2px;
+}
+
+.boxes {
+    display: flex;
+    flex-direction: row; 
+    gap: 2rem;
+}
+
+.box {
+    position: relative;
+    border: 1px solid #89CFF0;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+#amount {
+    position: absolute;
+    color: red;
+    font-size: larger;
+    margin-right: .2rem;
+    bottom: 0;
+    right: 0;
+    border-radius: 100%;
+}
